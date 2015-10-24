@@ -1,0 +1,49 @@
+;; disable menu-bar
+(menu-bar-mode -1)
+
+;; associate scss files with css-mode
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
+
+;; associate coffee files with javascript-mode
+(add-to-list 'auto-mode-alist '("\\.coffee\\'" . javascript-mode))
+
+;; make C-x C-g goto line
+(global-set-key (kbd "C-x C-g") 'goto-line)
+
+;; yaml stuff
+(add-to-list 'load-path "~/.emacs.d/yaml/")
+(require 'yaml-mode)
+
+;; json-reformat stuff
+(add-to-list 'load-path "~/.emacs.d/json-reformat/")
+(require 'json-reformat)
+
+;; json-snatcher
+(add-to-list 'load-path "~/.emacs.d/json-snatcher/")
+(require 'json-snatcher)
+
+;; json-mode
+(add-to-list 'load-path "~/.emacs.d/json-mode/")
+(require 'json-mode)
+(setq-default json-reformat:indent-width 2)
+
+
+;; disable tabs
+(setq-default indent-tabs-mode nil)
+
+;; previous buffer/next buffer as C-Z and C-Q
+(global-set-key (kbd "C-Z") 'next-buffer)
+(global-set-key (kbd "C-Q") 'previous-buffer)
+
+;; coffee script indent
+(custom-set-variables '(coffee-tab-width 2))
+
+;; auto-complete stuff
+(add-to-list 'load-path "~/.emacs.d/auto-complete")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.auto-completeemacs.d//ac-dict")
+(ac-config-default)
+
+;; ido mode stuff
+(require 'ido)
+(ido-mode t)

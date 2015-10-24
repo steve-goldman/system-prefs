@@ -1,0 +1,5 @@
+[user]
+	name = Steve Goldman
+	email = steve.goldman@gmail.com
+[push]
+	default = simple

@@ -1,0 +1,56 @@
+#!/usr/bin/bash
+
+# path
+PATH=$PATH:$HOME/Applications/activator-1.3.0-minimal:$HOME/Applications/scala-2.11.5/bin:/opt/ImageMagick/bin/
+
+# imports
+source $HOME/.git-prompt.sh
+
+# default editor
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+export EDITOR="emacs -nw"
+alias e="$EDITOR"
+
+# grep alias
+g()
+{
+    grep "$@" | egrep -v \~
+}
+
+# alias to open all the files in emacs that match the grep
+ea()
+{
+    e $(g $@ | cut -d: -f1 | sort -u)
+}
+
+# 'll' alias
+alias ll="ls -l"
+
+# git aliases
+alias gs="git status"
+alias gd="git diff"
+alias gl="git log"
+alias gk="git checkout"
+alias gb="git branch"
+alias ga="git add"
+alias gc="git commit"
+alias gr="git rebase"
+
+#colors
+BLUE="\[\033[1;34m\]"
+YELLOW="\[\033[0;93m\]"
+RED="\[\033[0;31m\]"
+WHITE="\[\033[0;37m\]"
+
+# prompt
+GIT_PS1_SHOWDIRTYSTATE="true"
+GIT_PS1_SHOWSTASHSTATE="true"
+GIT_PS1_SHOWUNTRACKEDFILES="true"
+GIT_PS1_SHOWUCOLORHINTS="true"
+GIT_PS1_SHOWUPSTREAM="auto"
+export PS1="${BLUE}[${YELLOW}\w${RED}\$(__git_ps1 \" (%s)\")${BLUE}]${WHITE} "
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
