@@ -3,3 +3,5 @@
 	email = steve.goldman@gmail.com
 [push]
 	default = simple
+[core]
+	excludesfile = /Users/steve/.gitignore_global
