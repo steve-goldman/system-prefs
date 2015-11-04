@@ -26,15 +26,25 @@ ea()
 # 'll' alias
 alias ll="ls -l"
 
+# git completion
+source $HOME/.git-completion.bash
+
 # git aliases
 alias gs="git status"
 alias gd="git diff"
+__git_complete gd _git_diff
 alias gl="git log"
+__git_complete gl _git_log
 alias gk="git checkout"
+__git_complete gk _git_checkout
 alias gb="git branch"
+__git_complete gb _git_branch
 alias ga="git add"
+__git_complete ga _git_add
 alias gc="git commit"
+__git_complete gc _git_commit
 alias gr="git rebase"
+__git_complete gr _git_rebase
 
 #colors
 BLUE="\[\033[1;34m\]"
