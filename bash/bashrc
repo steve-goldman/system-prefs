@@ -14,7 +14,7 @@ alias e="$EDITOR"
 # grep alias
 g()
 {
-    grep "$@" | egrep -v \~
+    grep -I "$@" | egrep -v \~
 }
 
 # alias to open all the files in emacs that match the grep
@@ -45,6 +45,7 @@ alias gc="git commit"
 __git_complete gc _git_commit
 alias gr="git rebase"
 __git_complete gr _git_rebase
+alias gf="git fetch -p"
 
 #colors
 BLUE="\[\033[1;34m\]"
