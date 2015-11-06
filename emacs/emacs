@@ -51,3 +51,14 @@
 ;; ido mode stuff
 (require 'ido)
 (ido-mode t)
+
+;; random stuff, including compilation stuff
+(add-to-list 'load-path "~/.emacs.d/includes")
+
+;; snippet stuff
+(add-to-list 'load-path "~/.emacs.d/snippet")
+(require 'snippet)
+
+;; rspec-mode
+(add-to-list 'load-path "~/.emacs.d/rspec-mode")
+(require 'rspec-mode)
