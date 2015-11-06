@@ -10,27 +10,25 @@
 ;; make C-x C-g goto line
 (global-set-key (kbd "C-x C-g") 'goto-line)
 
-;; yaml stuff
-(add-to-list 'load-path "~/.emacs.d/yaml/")
+;; random stuff, including compilation stuff
+(add-to-list 'load-path "~/.emacs.d/includes")
+
+;; snippet stuff
+(add-to-list 'load-path "~/.emacs.d/snippet")
+(require 'snippet)
+
+;; modes
+(add-to-list 'load-path "~/.emacs.d/modes/")
 (require 'yaml-mode)
-
-;; haml stuff
-(add-to-list 'load-path "~/.emacs.d/haml-mode/")
 (require 'haml-mode)
+(require 'rspec-mode)
 
-;; json-reformat stuff
-(add-to-list 'load-path "~/.emacs.d/json-reformat/")
+;; json stuff
+(add-to-list 'load-path "~/.emacs.d/json/")
 (require 'json-reformat)
-
-;; json-snatcher
-(add-to-list 'load-path "~/.emacs.d/json-snatcher/")
 (require 'json-snatcher)
-
-;; json-mode
-(add-to-list 'load-path "~/.emacs.d/json-mode/")
 (require 'json-mode)
 (setq-default json-reformat:indent-width 2)
-
 
 ;; disable tabs
 (setq-default indent-tabs-mode nil)
@@ -51,14 +49,3 @@
 ;; ido mode stuff
 (require 'ido)
 (ido-mode t)
-
-;; random stuff, including compilation stuff
-(add-to-list 'load-path "~/.emacs.d/includes")
-
-;; snippet stuff
-(add-to-list 'load-path "~/.emacs.d/snippet")
-(require 'snippet)
-
-;; rspec-mode
-(add-to-list 'load-path "~/.emacs.d/rspec-mode")
-(require 'rspec-mode)
