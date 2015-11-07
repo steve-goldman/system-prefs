@@ -68,3 +68,18 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Gemfury authentication
 export FURY_ENV="WWGJfnrStJtdTjS7zmxj"
+
+# Get a list of all the rails files given a list of roots
+rails_files()
+{
+    while [[ "$#" != "0" ]]; do
+        find $1 | egrep "\.(rb|haml|js|scss)$"
+        shift
+    done
+}
+
+# Open emacs on a list of rails files for the given list of roots
+er()
+{
+    e $(rails_files $*)
+}
