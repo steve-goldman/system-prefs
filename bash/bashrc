@@ -70,12 +70,21 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export FURY_ENV="WWGJfnrStJtdTjS7zmxj"
 
 # Get a list of all the rails files given a list of roots
+rails_files_in_dir()
+{
+    find $1 | egrep "(Gemfile*)|\.(rb|haml|js|scss)$" | tac
+}
+
 rails_files()
 {
-    while [[ "$#" != "0" ]]; do
-        find $1 | egrep "\.(rb|haml|js|scss)$"
-        shift
-    done
+    if [[ "$#" == 0 ]]; then
+        rails_files_in_dir .
+    else
+        while [[ "$#" != "0" ]]; do
+            find $1 | egrep "\.(rb|haml|js|scss)$"
+            shift
+        done
+    fi
 }
 
 # Open emacs on a list of rails files for the given list of roots
