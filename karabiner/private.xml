@@ -20,6 +20,10 @@
     <appname>EMACS</appname>
     <equal>org.gnu.Emacs</equal>
   </appdef>
+  <appdef>
+    <appname>SLACK</appname>
+    <equal>com.tinyspeck.slackmacgap</equal>
+  </appdef>
   <item>
     <name>TERMINAL stuff</name>
     <appendix>COMMAND+X to meta+X</appendix>
@@ -252,6 +256,35 @@
       __KeyToKey__
       KeyCode::U, ModifierFlag::CONTROL_L,
       KeyCode::U, ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R
+    </autogen>
+  </item>
+  <item>
+    <name>SLACK stuff</name>
+    <appendix>COMMAND+B to word backward</appendix>
+    <appendix>COMMAND+F to word forward</appendix>
+    <appendix>CONTROL+S to search</appendix>
+    <appendix>CONTROL+G to escape</appendix>
+    <only>SLACK</only>
+    <identifier>private.slack.stuff</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::B, ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F, ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::S, ModifierFlag::CONTROL_L,
+      KeyCode::F, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::G, ModifierFlag::CONTROL_L,
+      KeyCode::ESCAPE
     </autogen>
   </item>
 </root>
