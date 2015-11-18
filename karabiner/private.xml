@@ -264,6 +264,7 @@
     <appendix>COMMAND+F to word forward</appendix>
     <appendix>CONTROL+S to search</appendix>
     <appendix>CONTROL+G to escape</appendix>
+    <appendix>CONTROL+BACKSPACE to delete previous word</appendix>
     <only>SLACK</only>
     <identifier>private.slack.stuff</identifier>
     <autogen>
@@ -285,6 +286,11 @@
       __KeyToKey__
       KeyCode::G, ModifierFlag::CONTROL_L,
       KeyCode::ESCAPE
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::DELETE, ModifierFlag::CONTROL_L,
+      KeyCode::DELETE, ModifierFlag::OPTION_L
     </autogen>
   </item>
 </root>
