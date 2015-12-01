@@ -269,6 +269,7 @@
     <appendix>CONTROL+S to search</appendix>
     <appendix>CONTROL+G to escape</appendix>
     <appendix>CONTROL+BACKSPACE to delete previous word</appendix>
+    <appendix>BACKQUOTE to middle of open and close BACKQUOTES</appendix>
     <only>SLACK</only>
     <identifier>private.slack.stuff</identifier>
     <autogen>
@@ -295,6 +296,11 @@
       __KeyToKey__
       KeyCode::DELETE, ModifierFlag::CONTROL_L,
       KeyCode::DELETE, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BACKQUOTE,
+      KeyCode::BACKQUOTE, KeyCode::BACKQUOTE, KeyCode::CURSOR_LEFT
     </autogen>
   </item>
   <item>
