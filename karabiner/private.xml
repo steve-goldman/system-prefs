@@ -24,6 +24,10 @@
     <appname>SLACK</appname>
     <equal>com.tinyspeck.slackmacgap</equal>
   </appdef>
+  <appdef>
+    <appname>CHRONOMATE</appname>
+    <equal>com.quadbyte.chronomatelite</equal>
+  </appdef>
   <item>
     <name>TERMINAL stuff</name>
     <appendix>COMMAND+X to meta+X</appendix>
@@ -291,6 +295,23 @@
       __KeyToKey__
       KeyCode::DELETE, ModifierFlag::CONTROL_L,
       KeyCode::DELETE, ModifierFlag::OPTION_L
+    </autogen>
+  </item>
+  <item>
+    <name>CHRONOMATE stuff</name>
+    <appendix>COMMAND+B to word backward</appendix>
+    <appendix>COMMAND+F to word forward</appendix>
+    <only>CHRONOMATE</only>
+    <identifier>private.chronomate.stuff</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::B, ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F, ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
     </autogen>
   </item>
 </root>
