@@ -299,7 +299,7 @@
     </autogen>
     <autogen>
       __KeyToKey__
-      KeyCode::BACKQUOTE,
+      KeyCode::BACKQUOTE, ModifierFlag::NONE,
       KeyCode::BACKQUOTE, KeyCode::BACKQUOTE, KeyCode::CURSOR_LEFT
     </autogen>
   </item>
