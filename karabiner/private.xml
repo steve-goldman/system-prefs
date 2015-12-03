@@ -45,6 +45,8 @@
     <appendix>COMMAND+SHIFT+. to go to bottom</appendix>
     <appendix>CONTROL+TAB to tab right</appendix>
     <appendix>CONTROL+SHIFT+TAB to tab left</appendix>
+    <appendix>CONTROL+] to tab right</appendix>
+    <appendix>CONTROL+[ to tab left</appendix>
     <only>ITERM, EMACS</only>
     <identifier>private.terminals.stuff</identifier>
     <autogen>
@@ -134,6 +136,16 @@
     </autogen>
     <autogen>
       __KeyToKey__
+      KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
+      KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BRACKET_RIGHT, ModifierFlag::CONTROL_L,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
       KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L,
       KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
     </autogen>
@@ -165,6 +177,8 @@
     <appendix>CONTROL+P to up arrow</appendix>
     <appendix>CONTROL+U to page source</appendix>
     <appendix>BACKQUOTE to middle of open and close BACKQUOTES</appendix>
+    <appendix>CONTROL+] to tab right</appendix>
+    <appendix>CONTROL+[ to tab left</appendix>
     <only>CHROME, SAFARI, FINDER</only>
     <identifier>private.browsers.new.tab</identifier>
     <autogen>
@@ -266,6 +280,16 @@
       __KeyToKey__
       KeyCode::BACKQUOTE, ModifierFlag::NONE,
       KeyCode::BACKQUOTE, KeyCode::BACKQUOTE, KeyCode::CURSOR_LEFT
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
+      KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BRACKET_RIGHT, ModifierFlag::CONTROL_L,
+      KeyCode::TAB, ModifierFlag::CONTROL_L
     </autogen>
   </item>
   <item>
