@@ -73,7 +73,7 @@ export FURY_ENV="WWGJfnrStJtdTjS7zmxj"
 # Get a list of all the rails files given a list of roots
 rails_files_in_dir()
 {
-    find $1 | egrep "(Gemfile*)|\.(rb|haml|js|scss)$" | tac
+    find $1 | egrep "(Gemfile*)|\.(rb|haml|js|scss)$" | egrep -v "./db/migrate" | tac
 }
 
 rails_files()
