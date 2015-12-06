@@ -10,6 +10,9 @@
 ;; javascript indent
 (setq js-indent-level 2)
 
+;; associate yml.template files with yaml-mode
+(add-to-list 'auto-mode-alist '("\\.yml.template\\'" . yaml-mode))
+
 ;; make C-x C-g goto line
 (global-set-key (kbd "C-x C-g") 'goto-line)
 
