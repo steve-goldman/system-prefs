@@ -15,7 +15,7 @@ alias emacs="$EMACS"
 # grep alias
 g()
 {
-    grep -I "$@" | egrep -v \~
+    egrep -I "$@" | egrep -v \~
 }
 
 # alias to open all the files in emacs that match the grep
