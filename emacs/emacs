@@ -6,6 +6,8 @@
 
 ;; associate coffee files with javascript-mode
 (add-to-list 'auto-mode-alist '("\\.coffee\\'" . javascript-mode))
+
+;; javascript indent
 (setq js-indent-level 2)
 
 ;; make C-x C-g goto line
