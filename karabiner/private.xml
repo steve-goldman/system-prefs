@@ -47,6 +47,8 @@
     <appendix>CONTROL+SHIFT+TAB to tab left</appendix>
     <appendix>CONTROL+] to tab right</appendix>
     <appendix>CONTROL+[ to tab left</appendix>
+    <appendix>CONTROL+COMMAND+P to CONTROL+P,CONTROL+L</appendix>
+    <appendix>CONTROL+COMMAND+N to CONTROL+N,CONTROL+L</appendix>
     <only>ITERM, EMACS</only>
     <identifier>private.terminals.stuff</identifier>
     <autogen>
@@ -98,6 +100,16 @@
       __KeyToKey__
       KeyCode::U, ModifierFlag::COMMAND_L,
       KeyCode::ESCAPE, KeyCode::U
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::P, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_UP, KeyCode::L, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::N, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_DOWN, KeyCode::L, ModifierFlag::CONTROL_L
     </autogen>
     <autogen>
       __KeyToKey__
