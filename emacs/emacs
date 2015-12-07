@@ -7,6 +7,9 @@
 ;; associate coffee files with javascript-mode
 (add-to-list 'auto-mode-alist '("\\.coffee\\'" . javascript-mode))
 
+;; associate emacs files with lisp-mode
+(add-to-list 'auto-mode-alist '("\\emacs\\'" . lisp-mode))
+
 ;; javascript indent
 (setq js-indent-level 2)
 
