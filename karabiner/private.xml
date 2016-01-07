@@ -308,6 +308,7 @@
     <name>SLACK stuff</name>
     <appendix>COMMAND+B to word backward</appendix>
     <appendix>COMMAND+F to word forward</appendix>
+    <appendix>COMMAND+D to delete word</appendix>
     <appendix>CONTROL+S to search</appendix>
     <appendix>CONTROL+G to escape</appendix>
     <appendix>CONTROL+BACKSPACE to delete previous word</appendix>
@@ -323,6 +324,11 @@
       __KeyToKey__
       KeyCode::F, ModifierFlag::COMMAND_L,
       KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::D, ModifierFlag::COMMAND_L,
+      KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L
     </autogen>
     <autogen>
       __KeyToKey__
@@ -349,6 +355,8 @@
     <name>CHRONOMATE stuff</name>
     <appendix>COMMAND+B to word backward</appendix>
     <appendix>COMMAND+F to word forward</appendix>
+    <appendix>COMMAND+D to delete word</appendix>
+    <appendix>CONTROL+BACKSPACE to backspace over word</appendix>
     <only>CHRONOMATE</only>
     <identifier>private.chronomate.stuff</identifier>
     <autogen>
@@ -360,6 +368,16 @@
       __KeyToKey__
       KeyCode::F, ModifierFlag::COMMAND_L,
       KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::D, ModifierFlag::COMMAND_L,
+      KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::DELETE, ModifierFlag::CONTROL_L,
+      KeyCode::DELETE, ModifierFlag::OPTION_L
     </autogen>
   </item>
 </root>
