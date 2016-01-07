@@ -6,6 +6,7 @@
 
 ;; associate scss files with css-mode
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
+(setq css-indent-offset 2)
 
 ;; associate coffee files with javascript-mode
 (add-to-list 'auto-mode-alist '("\\.coffee\\'" . javascript-mode))
