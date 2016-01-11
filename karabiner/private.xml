@@ -313,6 +313,8 @@
     <appendix>CONTROL+G to escape</appendix>
     <appendix>CONTROL+BACKSPACE to delete previous word</appendix>
     <appendix>BACKQUOTE to middle of open and close BACKQUOTES</appendix>
+    <appendix>CONTROL+[ to tab left</appendix>
+    <appendix>CONTROL+] to tab right</appendix>
     <only>SLACK</only>
     <identifier>private.slack.stuff</identifier>
     <autogen>
@@ -349,6 +351,16 @@
       __KeyToKey__
       KeyCode::BACKQUOTE, ModifierFlag::NONE,
       KeyCode::BACKQUOTE, KeyCode::BACKQUOTE, KeyCode::CURSOR_LEFT
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
+      KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BRACKET_RIGHT, ModifierFlag::CONTROL_L,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
     </autogen>
   </item>
   <item>
