@@ -28,6 +28,10 @@
     <appname>CHRONOMATE</appname>
     <equal>com.quadbyte.chronomate</equal>
   </appdef>
+  <appdef>
+    <appname>ANDROID_STUDIO</appname>
+    <equal>com.google.android.studio</equal>
+  </appdef>
   <item>
     <name>TERMINAL stuff</name>
     <appendix>COMMAND+X to meta+X</appendix>
@@ -390,6 +394,77 @@
       __KeyToKey__
       KeyCode::DELETE, ModifierFlag::CONTROL_L,
       KeyCode::DELETE, ModifierFlag::OPTION_L
+    </autogen>
+  </item>
+  <item>
+    <name>ANDROID_STUDIO stuff</name>
+    <appendix>COMMAND+B to word backward</appendix>
+    <appendix>COMMAND+F to word forward</appendix>
+    <appendix>COMMAND+D to delete word</appendix>
+    <appendix>CONTROL+BACKSPACE to backspace over word</appendix>
+    <appendix>COMMAND+SHIFT+, to go to top</appendix>
+    <appendix>COMMAND+SHIFT+. to go to bottom</appendix>
+    <appendix>CONTROL+S to search</appendix>
+    <appendix>COMMAND+V to page up</appendix>
+    <appendix>CONTROL+V to page down</appendix>
+    <appendix>CONTROL+[ to tab left</appendix>
+    <appendix>CONTROL+] to tab right</appendix>
+    <only>ANDROID_STUDIO</only>
+    <identifier>private.android_studio.stuff</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::B, ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F, ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::D, ModifierFlag::COMMAND_L,
+      KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::DELETE, ModifierFlag::CONTROL_L,
+      KeyCode::DELETE, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMA, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
+      KeyCode::HOME, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::DOT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
+      KeyCode::END, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::S, ModifierFlag::CONTROL_L,
+      KeyCode::F, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::V, ModifierFlag::COMMAND_L,
+      KeyCode::PAGEUP
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::V, ModifierFlag::CONTROL_L,
+      KeyCode::PAGEDOWN
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
+      KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::BRACKET_RIGHT, ModifierFlag::CONTROL_L,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
     </autogen>
   </item>
 </root>
