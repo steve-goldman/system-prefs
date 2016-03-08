@@ -26,7 +26,7 @@
   </appdef>
   <appdef>
     <appname>CHRONOMATE</appname>
-    <equal>com.quadbyte.chronomatelite</equal>
+    <equal>com.quadbyte.chronomate</equal>
   </appdef>
   <item>
     <name>TERMINAL stuff</name>
