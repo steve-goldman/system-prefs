@@ -35,6 +35,9 @@
 (require 'yaml-mode)
 (require 'haml-mode)
 (require 'rspec-mode)
+(require 'gnuplot-mode)
+
+(add-to-list 'auto-mode-alist '("\\.gnuplot\\'" . gnuplot-mode))
 
 ;; json stuff
 (add-to-list 'load-path "~/.emacs.d/json/")
