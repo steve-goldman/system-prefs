@@ -401,6 +401,7 @@
     <appendix>COMMAND+B to word backward</appendix>
     <appendix>COMMAND+F to word forward</appendix>
     <appendix>COMMAND+D to delete word</appendix>
+    <appendix>CONTROL+D to delete character</appendix>
     <appendix>CONTROL+BACKSPACE to backspace over word</appendix>
     <appendix>COMMAND+SHIFT+, to go to top</appendix>
     <appendix>COMMAND+SHIFT+. to go to bottom</appendix>
@@ -409,6 +410,13 @@
     <appendix>CONTROL+V to page down</appendix>
     <appendix>CONTROL+[ to tab left</appendix>
     <appendix>CONTROL+] to tab right</appendix>
+    <appendix>CONTROL+W to close tab</appendix>
+    <appendix>COMMAND+W to copy</appendix>
+    <appendix>CONTROL+W to cut</appendix>
+    <appendix>CONTROL+Y to paste</appendix>
+    <appendix>CONTROL+T to find class</appendix>
+    <appendix>CONTROL+SHIFT+T to find file</appendix>
+    <appendix>CONTROL+G to escape</appendix>
     <only>ANDROID_STUDIO</only>
     <identifier>private.android_studio.stuff</identifier>
     <autogen>
@@ -425,6 +433,11 @@
       __KeyToKey__
       KeyCode::D, ModifierFlag::COMMAND_L,
       KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::D, ModifierFlag::CONTROL_L,
+      KeyCode::CURSOR_RIGHT, KeyCode::DELETE
     </autogen>
     <autogen>
       __KeyToKey__
@@ -465,6 +478,36 @@
       __KeyToKey__
       KeyCode::BRACKET_RIGHT, ModifierFlag::CONTROL_L,
       KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::W, ModifierFlag::CONTROL_L,
+      KeyCode::X, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+      KeyCode::C, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::Y, ModifierFlag::CONTROL_L,
+      KeyCode::V, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::T, ModifierFlag::CONTROL_L,
+      KeyCode::O, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::T, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L,
+      KeyCode::O, ModifierFlag::COMMAND_L  |ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::G, ModifierFlag::CONTROL_L,
+      KeyCode::ESCAPE
     </autogen>
   </item>
 </root>
