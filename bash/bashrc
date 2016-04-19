@@ -8,7 +8,8 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/Library/Android/sdk/tools/lib64
 source $HOME/.git-prompt.sh
 
 # default editor
-export EMACS="/Applications/Emacs.app/Contents/MacOS/Emacs"
+#export EMACS="/Applications/Emacs.app/Contents/MacOS/Emacs"
+export EMACS="/Applications/Emacs2.app/Contents/MacOS/Emacs"
 export EDITOR="$EMACS -nw"
 alias e="$EDITOR"
 alias emacs="$EMACS"
