@@ -2,3 +2,9 @@
 *~
 .\#*
 \#*#
+/not_for_commit
+.gradle
+.idea
+build
+local.properties
+*.iml
