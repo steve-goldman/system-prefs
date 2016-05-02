@@ -98,3 +98,14 @@ er()
 {
     e $(rails_files $*)
 }
+
+# date stuff
+datel()
+{
+    date -r ${1:0:10}
+}
+
+dateu()
+{
+    date -ur ${1:0:10}
+}
