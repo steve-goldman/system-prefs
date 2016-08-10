@@ -4,6 +4,9 @@
 ;; disable menu-bar
 (menu-bar-mode -1)
 
+;; disable auto-fill-mode
+(remove-hook 'text-mode-hook #'turn-on-auto-fill)
+
 ;; associate scss files with css-mode
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
 (setq css-indent-offset 2)
