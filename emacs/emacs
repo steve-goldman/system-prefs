@@ -39,6 +39,7 @@
 (require 'haml-mode)
 (require 'rspec-mode)
 (require 'gnuplot-mode)
+(require 'coffee-mode)
 
 (add-to-list 'auto-mode-alist '("\\.gnuplot\\'" . gnuplot-mode))
 
