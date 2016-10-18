@@ -9,3 +9,7 @@ build
 local.properties
 *.iml
 .DS_Store
+.factorypath
+target
+.svn
+.project
