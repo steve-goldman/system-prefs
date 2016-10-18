@@ -580,8 +580,9 @@
     <appendix>CONTROL+E to end of line</appendix>
     <appendix>CONTROL+N to next line</appendix>
     <appendix>CONTROL+P to next line</appendix>
-    <appendix>CONTROL+f to character forward</appendix>
-    <appendix>CONTROL+b to character backward</appendix>
+    <appendix>CONTROL+F to character forward</appendix>
+    <appendix>CONTROL+B to character backward</appendix>
+    <appendix>CONTROL+D to delete character</appendix>
     <only>ANYPOINT</only>
     <identifier>private.anypoint.stuff</identifier>
     <autogen>
@@ -628,6 +629,11 @@
       __KeyToKey__
       KeyCode::B, ModifierFlag::CONTROL_L,
       KeyCode::CURSOR_LEFT
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::D, ModifierFlag::CONTROL_L,
+      KeyCode::FORWARD_DELETE
     </autogen>
   </item>
 </root>
